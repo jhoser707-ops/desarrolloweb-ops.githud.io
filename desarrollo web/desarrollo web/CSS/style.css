@@ -83,3 +83,20 @@ header{
 body{
     background-color: black;
 }
+
+div p {
+    color: blanchedalmond;
+}
+
+div div {
+    color:beige
+}
+div.producto {
+  margin-right: 50px;
+  transition: transform 0,3s; /* suaviza el movimiento */
+}
+
+.producto:hover {
+  transform: translateY(-15px); /* se mueve hacia arriba */
+}
+
