@@ -1,0 +1,67 @@
+#fondo {
+    background-color: #0f172a;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+#titulo {
+    text-align: center;
+    color: #38bdf8;
+    margin-top: 20px;
+}
+
+#tabla-juegos {
+    margin: 30px auto;
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#encabezado {
+    background-color: #38bdf8;
+    color: black;
+}
+
+#tabla-juegos th,
+#tabla-juegos td {
+    padding: 12px;
+    text-align: center;
+}
+
+#contenido tr {
+    border-bottom: 1px solid #334155;
+    transition: 0.3s;
+}
+
+#contenido tr:hover {
+    background-color: #334155;
+}
+
+#precio {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+/* imágenes */
+#img1,
+#img2,
+#img3,
+#img4,
+#img5,
+#img6,
+#img7 {
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#img1:hover,
+#img2:hover,
+#img3:hover,
+#img4:hover,
+#img5:hover,
+#img6:hover,
+#img7:hover {
+    transform: scale(1.1);
+}

@@ -1,40 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registrate</title>
+    <title>Regístrate - Zona Gamer</title>
+    <link rel="stylesheet" href="CSS/style2.css">
 </head>
+
 <body>
 
-<form action="http://www.zona gamer.com/repite.php" method="post">
+    <form id="formulario" action="index.html" method="post">
 
-<label>Ingrese los datos de su registro</label>
+        <h2>Crear cuenta</h2>
 
-<br>
-<br>
+        <input type="email" name="correo" placeholder="Correo" required>
 
-<input type="email" placeholder="Correo" required>
+        <input type="text" name="usuario" placeholder="Usuario" required>
 
-<br>
-<br>
+        <input type="password" name="password" placeholder="Contraseña" required>
 
-<input type="text" placeholder="Usuario" required>
+        <input type="password" name="confirmar" placeholder="Repite la contraseña" required>
 
-<br>
-<br>
+        <input id="boton" type="submit" value="Registrarse">
 
-<input type="text" placeholder="Contraseña" required>
-
-<br>
-<br>
-
-<input type="text" placeholder="Repita la Contraseña" required>
-
-<br>
-<br>
-
-<input type="submit">
+    </form>
 
 </body>
+
 </html>

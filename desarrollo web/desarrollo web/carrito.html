@@ -1,70 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.6">
-<title>Carrito</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="CSS/style5.css">
 </head>
-<body>
 
-<form action="http://www.zona gamer.com/repite.php" method="post">
+<body id="fondo">
 
-<label>Ingrese los datos de su compra </label>
+    <form id="formulario" action="https://www.zonagamer.com/repite.php" method="post">
 
-<br>
-<br>
+        <label id="titulo">Ingrese los datos de su compra</label>
 
-<label>Seleccione su juego</label>
+        <br><br>
 
-<select name="Seleccion de juego">
+        <label class="subtitulo">Seleccione su juego</label>
 
-<option value="l">Call o duty S/103.60</option>
-<option value="2">The laft of S/180</option>
-<option value="3">GTAV S/134.47</option>
-<option value="4">Zelda S/179</option>
-<option value="5">Mario S/190</option>
-<option value="6">Uncharted S/98</option>
-<option value="7">EA Sport S/170</option>
+        <select id="selectJuego" name="juego" required>
+            <option value="">-- Selecciona un juego --</option>
+            <option value="cod">Call of Duty - S/103.60</option>
+            <option value="lastofus">The Last of Us - S/180</option>
+            <option value="gtav">GTA V - S/134.47</option>
+            <option value="zelda">Zelda - S/179</option>
+            <option value="mario">Mario - S/190</option>
+            <option value="uncharted">Uncharted - S/98</option>
+            <option value="ea">EA Sports - S/170</option>
+        </select>
 
-</select>
+        <br><br>
 
-<br>
-<br>
+        <input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellidos" required>
 
-<input type="text" placeholder="Nombre y Apellidos" required/>
+        <br><br>
 
-<br>
-<br>
+        <input id="direccion" type="text" name="direccion" placeholder="Dirección" required>
 
-<input type="text" placeholder="Direccion" required/>
+        <br><br>
 
-<br>
-<br>
+        <input id="telefono" type="tel" name="telefono" placeholder="Nro de teléfono" required>
 
-<input type="number" placeholder="Nro de telefono" required/>
+        <br><br>
 
-<br>
-<br>
+        <input id="tarjeta" type="number" name="tarjeta" placeholder="Nro de tarjeta" required>
 
-<input type="number" placeholder="Nro de trajeta" required/>
+        <br><br>
 
-<br>
-<br>
+        <input id="codigo" type="number" name="codigo" placeholder="Código de seguridad" required>
 
-<input type="number" placeholder="Codigo de seguridad" required/>
+        <br><br>
 
-<br>
-<br>
+        <label class="subtitulo">Fecha de vencimiento</label>
 
-<label> Fecha de vencimiento. </label>
+        <br>
 
-<br>
+        <input id="fecha" type="date" name="fecha" required>
 
-<input type="date" required/>
+        <br><br>
 
-<br>
-<br>
+        <input id="boton" type="submit" value="Comprar">
 
-<input type="submit"/>
-</form>
+    </form>
+
+</body>
+
+</html>
