@@ -10,27 +10,44 @@
 
 <body>
 
-    <form id="formulario" action="inicio.html" method="post">
+    <!-- Botón para abrir -->
+    <a href="#modal" id="abrir">Iniciar sesión</a>
 
-        <h2 id="titulo">Iniciar sesión</h2>
+    <!-- Modal -->
+    <div id="modal" class="modal">
 
-        <br><br>
+        <div class="modal-contenido">
 
-        <input id="usuario" name="usuario" type="text" placeholder="Usuario" required />
+            <!-- Botón cerrar -->
+            <a href="#" class="cerrar">×</a>
 
-        <br><br>
+            <form id="formulario" action="inicio.html" method="post">
 
-        <input id="password" name="password" type="password" placeholder="Contraseña" required />
+                <h2 id="titulo">Iniciar sesión</h2>
 
-        <br><br>
+                <br><br>
 
-        <input id="boton" type="submit" value="Ingresar" />
+                <input id="usuario" name="usuario" type="text" placeholder="Usuario" required />
 
-        <p id="registro-texto">
-            ¿No tienes cuenta?
-            <a id="registro-link" href="registro.html">Regístrate aquí</a>
-        </p>
+                <br><br>
 
-    </form>
+                <input id="password" name="password" type="password" placeholder="Contraseña" required />
+
+                <br><br>
+
+                <input id="boton" type="submit" value="Ingresar" />
+
+                <p id="registro-texto">
+                    ¿No tienes cuenta?
+                    <a id="registro-link" href="registro.html">Regístrate aquí</a>
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
 
 </body>
+
+</html>
