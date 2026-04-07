@@ -1,30 +1,41 @@
-header{
-    margin: 30px;
-    padding: 15px;
-    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpQcxKKO3v_CkQbq3hGyHttSj7BaND8jfpnA&s)
-}
-#titulo {
-    color: bisque;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    font-size: 100px;
+/* ===== RESET ===== */
+body {
+    margin: 0;
+    padding: 0;
+    margin-top: 70px;
+    /* espacio para el nav fijo */
 }
 
-#titulo2{
-    color: darkorange;
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
+/* ===== NAV (BARRA ARRIBA FIJA) ===== */
+nav {
+    background-color: greenyellow;
+    width: 100%;
+    padding: 10px 0;
 
-nav{
-   background-color: greenyellow;
-    width: 250px;            
-    height: 50vh;           
-    padding: 20px;         
-    left: 0;                 
+    position: fixed;
     top: 0;
+    left: 0;
+    z-index: 1000;
 }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Mover a la derecha */
+.derecha {
+    margin-left: auto;
+}
+
 nav ul li a {
     text-decoration: none;
     color: rgb(158, 21, 21);
@@ -33,28 +44,119 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffcc00;  
+    color: #ffcc00;
 }
 
-#presentacion{
+/* ===== HEADER ===== */
+header {
+    margin: 0;
+    padding: 15px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpQcxKKO3v_CkQbq3hGyHttSj7BaND8jfpnA&s);
+}
+
+#titulo {
+    color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 100px;
+}
+
+#titulo2 {
+    color: darkorange;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== CONTENIDO ===== */
+#presentacion {
     color: blue;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
     text-align: center;
-}    
+}
 
+/* ===== VIDEO ===== */
 .video-container {
-    display: flex;              /* activa flexbox */
-    justify-content: center;    /* centra horizontalmente */
-    align-items: center;        /* centra verticalmente */
-    height: 65vh;              /* ocupa toda la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
     background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Call_of_Duty_Infinite_Warfare_cover.jpg/250px-Call_of_Duty_Infinite_Warfare_cover.jpg);
 }
 
-.marquee{
+/* ===== MARQUEE ===== */
+.marquee {
     margin: 30px;
     padding: 30px;
     background-color: #ffcc00;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 25px;
+}
+
+/* ===== PRODUCTOS ===== */
+.producto {
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+/* ===== MODAL LOGIN ===== */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+
+    display: none;
+}
+
+/* Mostrar modal */
+.modal:target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Caja del modal */
+.modal-contenido {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón cerrar */
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Inputs */
+.modal-contenido input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Botón ingresar */
+.modal-contenido input[type="submit"] {
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
