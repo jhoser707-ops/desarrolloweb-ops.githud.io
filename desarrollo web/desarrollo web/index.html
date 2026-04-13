@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zona Arcade</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="CSS/style.css">
 </head>
@@ -20,10 +21,8 @@
   </header>
 
 
-  <!-- SEÑALADO: fixed-top, buscador centrado y logo como imagen -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container-fluid">
-      <!-- SEÑALADO: aquí va la imagen en vez de texto -->
       <a class="navbar-brand" href="#">
         <img src="logo.png" alt="Logo" width="68" height="68">
       </a>
@@ -34,7 +33,6 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
-        <!-- Menú principal a la izquierda -->
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
@@ -53,13 +51,11 @@
           </li>
         </ul>
 
-        <!-- SEÑALADO: formulario de búsqueda centrado -->
         <form class="d-flex mx-auto">
           <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
           <button class="btn btn-outline-success" type="submit">Buscar</button>
         </form>
 
-        <!-- Menú a la derecha -->
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="#modal">Inicio de sesión</a>
@@ -119,8 +115,7 @@
 
     <marquee class="marquee">--OFERTA NO TE LO PIERDAS--</marquee>
 
-    <div class="row" class="container my-5">
-      <!-- Producto 1 -->
+    <div class="row">
       <div class="col-md-4 col-lg-3 mb-4">
         <div class="card h-100 text-center">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNLJuUb18cItFonetyyrELEUVvwFavG2zGvA&s"
@@ -129,12 +124,11 @@
             <h5 class="card-title">Call of Duty</h5>
             <p class="card-text text-danger">Descuento -70%: S/31.10</p>
             <p class="card-text"><small class="text-muted">Precio: S/103.60</small></p>
-            <a href="#" class="btn btn-primary">Comprar</a>
+            <button onclick="confirmar()" class="btn btn-primary">Comprar</button>
           </div>
         </div>
       </div>
 
-      <!-- Producto 2 -->
       <div class="col-md-4 col-lg-3 mb-4">
         <div class="card h-100 text-center">
           <img src="https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/2239/PMP00002719428/full_image-1.jpeg"
@@ -143,12 +137,11 @@
             <h5 class="card-title">The Last of Us Part 1</h5>
             <p class="card-text text-danger">Descuento -20%: S/144</p>
             <p class="card-text"><small class="text-muted">Precio: S/180</small></p>
-            <a href="#" class="btn btn-primary">Comprar</a>
+            <button onclick="confirmar()" class="btn btn-primary">Comprar</button>
           </div>
         </div>
       </div>
 
-      <!-- Producto 3 -->
       <div class="col-md-4 col-lg-3 mb-4">
         <div class="card h-100 text-center">
           <img src="https://http2.mlstatic.com/D_NQ_NP_683923-MLA89789044947_082025-O.webp" class="card-img-top"
@@ -157,12 +150,11 @@
             <h5 class="card-title">EA Sports FC 26</h5>
             <p class="card-text text-danger">Descuento 15%: S/144.50</p>
             <p class="card-text"><small class="text-muted">Precio: S/170</small></p>
-            <a href="#" class="btn btn-primary">Comprar</a>
+            <button onclick="confirmar()" class="btn btn-primary">Comprar</button>
           </div>
         </div>
       </div>
 
-      <!-- Producto 4 -->
       <div class="col-md-4 col-lg-3 mb-4">
         <div class="card h-100 text-center">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL7_2T1pdKlBy-O680kcBZS22Z4Grdu0ivFA&s"
@@ -171,12 +163,11 @@
             <h5 class="card-title">Uncharted 4</h5>
             <p class="card-text text-danger">Descuento 10%: S/88.2</p>
             <p class="card-text"><small class="text-muted">Precio: S/98</small></p>
-            <a href="#" class="btn btn-primary">Comprar</a>
+            <button onclick="confirmar()" class="btn btn-primary">Comprar</button>
           </div>
         </div>
       </div>
 
-      <!-- Producto 5 -->
       <div class="col-md-4 col-lg-3 mb-4">
         <div class="card h-100 text-center">
           <img src="https://home.ripley.com.pe/Attachment/WOP_5/2031295639529/2031295639529_2.jpg" class="card-img-top"
@@ -185,14 +176,13 @@
             <h5 class="card-title">GTA V</h5>
             <p class="card-text text-danger">Descuento 10%: S/121</p>
             <p class="card-text"><small class="text-muted">Precio: S/134.47</small></p>
-            <a href="#" class="btn btn-primary">Comprar</a>
+            <button onclick="confirmar()" class="btn btn-primary">Comprar</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- ================= MODAL ================= -->
   <div id="modal" class="modal">
 
     <div class="modal-contenido">
@@ -218,6 +208,16 @@
     </div>
 
   </div>
+
+  <script>
+    function confirmar() {
+      Swal.fire({
+        title: "Agregado correctamente",
+        icon: "success",
+        draggable: true
+      });
+    }
+  </script>
 </body>
 
 </html>
