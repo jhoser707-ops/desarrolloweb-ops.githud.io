@@ -48,11 +48,11 @@ nav ul li a:hover {
 }
 
 /* ===== HEADER ===== */
-/*header {
+#header {
     margin: 0;
     padding: 15px;
     background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20241104/pngtree-neon-glowing-video-game-controllers-on-a-black-background-image_16521725.jpg);
-}*/
+}
 
 #titulo {
     color: bisque;
@@ -159,4 +159,32 @@ nav ul li a:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* =========================================
+   LO QUE FALTABA (Sin cambiar nada de arriba)
+   ========================================= */
+
+/* Estilo para que los iconos hereden el color y tamaño adecuado */
+nav ul li a i {
+    font-size: 24px;
+    color: rgb(158, 21, 21);
+    vertical-align: middle;
+}
+
+nav ul li a i:hover {
+    color: #ffcc00;
+}
+
+/* Asegura que el modal de registro también se muestre */
+#modal-registro:target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ajuste para que la lista de iconos a la derecha no se amontone */
+.ms-auto {
+    display: flex;
+    align-items: center;
 }
