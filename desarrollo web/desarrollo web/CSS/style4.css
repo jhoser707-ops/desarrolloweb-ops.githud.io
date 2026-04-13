@@ -1,14 +1,12 @@
-/* Fondo general */
+/* --- ESTILOS GENERALES Y TABLA --- */
 #fondo {
     background: #f0f7ff;
-    /* Un blanco azulado muy suave */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #0056b3;
     margin: 0;
     padding: 20px;
 }
 
-/* Título */
 #titulo {
     text-align: center;
     font-size: 3rem;
@@ -18,21 +16,17 @@
     letter-spacing: 2px;
 }
 
-/* Tabla */
 #tabla-juegos {
     width: 95%;
     max-width: 1000px;
     margin: auto;
     border-collapse: collapse;
     background: #ffffff;
-    /* Fondo blanco para la tabla */
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 123, 255, 0.1);
-    /* Sombra azulada sutil */
 }
 
-/* Encabezado */
 #tabla-juegos th {
     background: #007bff;
     color: #ffffff;
@@ -40,56 +34,106 @@
     font-size: 1.1rem;
 }
 
-/* Filas y Celdas */
 #tabla-juegos td {
     padding: 15px;
     text-align: center;
     border-bottom: 1px solid #e1efff;
-    /* Línea divisoria azul muy clara */
     color: #333;
-    /* Texto oscuro para lectura fácil */
 }
 
-/* Hover en filas */
 #tabla-juegos tr:hover {
     background: #f8fbff;
 }
 
-/* Imágenes */
 #tabla-juegos img {
     border: 3px solid #e1efff;
     border-radius: 12px;
     transition: transform 0.3s ease;
 }
 
-#tabla-juegos img:hover {
-    transform: scale(1.1);
-    border-color: #007bff;
-}
-
-/* Botones agregar */
 #tabla-juegos button {
     background: #007bff;
-    border: 2px solid #007bff;
+    border: none;
     padding: 10px 20px;
     color: white;
     font-weight: bold;
     border-radius: 30px;
-    /* Bordes más redondeados */
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 #tabla-juegos button:hover {
-    background: #ffffff;
-    color: #007bff;
-    /* Efecto invertido */
+    background: #0056b3;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
 }
 
-/* Quitamos los estilos del carrito que ya no usas */
-#carrito,
-h2 {
-    display: none;
+/* --- ESTILOS DE LA SECCIÓN CARRITO --- */
+#seccion-lista {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 123, 255, 0.1);
+    text-align: center;
+    border: 1px solid #e1efff;
+}
+
+#seccion-lista h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    display: block !important;
+}
+
+#miLista {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    border: 2px solid #e1efff;
+    border-radius: 12px;
+    background-color: #f8fbff;
+    color: #0056b3;
+    font-family: monospace;
+    font-size: 1rem;
+    resize: none;
+    outline: none;
+}
+
+.botones-lista {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-comprar {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-comprar:hover {
+    background: #0056b3;
+}
+
+.btn-borrar {
+    background: #ffffff;
+    color: #007bff;
+    border: 2px solid #007bff;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-borrar:hover {
+    background: #f0f7ff;
+    color: #ff4d4d;
+    border-color: #ff4d4d;
 }
