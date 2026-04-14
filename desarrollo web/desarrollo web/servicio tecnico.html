@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio Técnico de Consolas | NombreDeTuEmpresa</title>
+
+    <link rel="stylesheet" href="CSS/style5.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <header>
+        <section class="hero">
+            <h1>Expertos en Reparación de Consolas</h1>
+            <p>Devolvemos a la vida tu PlayStation, Xbox o Nintendo con repuestos originales y garantía.</p>
+        </section>
+    </header>
+
+    <main>
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <div class="servicios-grid">
+                <article class="servicio-card">
+                    <h3>Mantenimiento Preventivo</h3>
+                    <p>Limpieza interna profunda y cambio de pasta térmica para evitar sobrecalentamiento.</p>
+                </article>
+
+                <article class="servicio-card">
+                    <h3>Reparación de Hardware</h3>
+                    <p>Cambio de puertos HDMI, lectores de disco, fuentes de poder y reparación de placas.</p>
+                </article>
+
+                <article class="servicio-card">
+                    <h3>Mandos y Controles</h3>
+                    <p>Solución a problemas de Drift, botones pegajosos y baterías agotadas.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="consolas">
+            <h2>Modelos que Atendemos</h2>
+            <ul>
+                <li><strong>PlayStation:</strong> PS4, PS5 y modelos retro.</li>
+                <li><strong>Xbox:</strong> Series X/S, One y 360.</li>
+                <li><strong>Nintendo:</strong> Switch (Lite/OLED), Wii U y 3DS.</li>
+            </ul>
+        </section>
+
+        <section id="proceso">
+            <h2>¿Cómo trabajamos?</h2>
+            <ol>
+                <li><strong>Recepción:</strong> Traes tu consola o solicitas recogida.</li>
+                <li><strong>Diagnóstico:</strong> Evaluamos la falla en 24-48 horas.</li>
+                <li><strong>Reparación:</strong> Una vez aprobado el presupuesto, procedemos al arreglo.</li>
+                <li><strong>Entrega:</strong> Te entregamos tu consola testeada y con garantía escrita.</li>
+            </ol>
+        </section>
+
+        <section id="contacto">
+            <h2>Inicia tu reparación</h2>
+            <form id="formReparacion">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="consola">Consola y Modelo:</label>
+                <input type="text" id="consola" name="consola" placeholder="Ej: PS5 Digital" required>
+
+                <label for="falla">Descripción de la falla:</label>
+                <textarea id="falla" name="falla" rows="4" required></textarea>
+
+                <button type="submit">Enviar Solicitud</button>
+            </form>
+        </section>
+    </main>
+    <script>
+        const formulario = document.getElementById('formReparacion');
+
+        formulario.addEventListener('submit', function (event) {
+            // Evita que la página se refresque para poder ver la alerta
+            event.preventDefault();
+
+            // Tu alerta SweetAlert2 personalizada
+            Swal.fire({
+                title: "¡Tu solicitud fue aceptada!",
+                text: "Nos pondremos en contacto contigo en breve para coordinar la reparación.",
+                icon: "success",
+                draggable: true
+            });
+
+            // Resetea el formulario después del envío
+            formulario.reset();
+        });
+    </script>
+
+</body>
+
+</html>
