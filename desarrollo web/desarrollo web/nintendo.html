@@ -2,25 +2,46 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>PS5</title>
+  <title>Nintendo</title>
    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
- 
+ <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h2 {
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #0d6efd;
+    }
+    .card-text {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    .btn-primary {
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  </style>
 </head>
 <body>
 
 <div class="container py-5">
-  <h2 class="mb-4 text-center">PLAYSTATION 5</h2>
+  <h2 class="mb-4 text-center text-primary">Nintendo </h2>
   <div class="row">
 
     <!-- Call of Duty -->
     <div class="col-md-4 col-lg-3 mb-4">
       <div class="card h-100 text-center">
-        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQaX7JlXQtbEFO3iMp-_Wc9KoCPDMGbSGtS9cR1mHt548Ib_tKNdcz7KKiu1or3B_65daWLukCMiSsQfTZcZjljA8PE3pA5mFhr19PiyBHIKk81pYOvucnKRDmR8K7uGld2k6UkpNYAZq4&usqp=CAc"
-          class="card-img-top" alt="spider man 2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVr96thWMbxyfSw-V8uUgv381QlsMLmyg04Q&s"
+          class="card-img-top" alt="The Legend of Zelda: Breath of the Wild">
         <div class="card-body">
-          <h5 class="card-title">Spider Man 2</h5>
-          <p class="card-text text-danger">Precio:S/103.60</p>
+          <h5 class="card-title">The Legend of Zelda: Breath of the Wild</h5>
+          <p class="card-text text-danger">Precio:S/150.00</p>
           <button onclick="confirmar()" class="btn btn-primary">Comprar</button>
         </div>
       </div>
@@ -29,11 +50,11 @@
     <!-- The Last of Us Part 1 -->
     <div class="col-md-4 col-lg-3 mb-4">
       <div class="card h-100 text-center">
-        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRsVc6BOvoA_I5J1bhikzUSsPsjtJ_7AT2JKPk_R71CcYlUCP8ZB5wbw1zjgNkbWS6JKTimSkFvEWZNQOs_Q9cUuBsMflz7eixV65dFOXB24uwW2lcN33LsDti1K7JCiaHospR8dx4&usqp=CAc"
-          class="card-img-top" alt="The Last of Us Part 1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWhz83FbYqx0luNHuG4K5SUqQRWNBHqEhSog&s"
+          class="card-img-top" alt="The Legend of Zelda: Tears of the Kingdom">
         <div class="card-body">
-          <h5 class="card-title">The Last of Us Part 1</h5>
-          <p class="card-text text-danger">Precio: S/180</p>
+          <h5 class="card-title">The Legend of Zelda: Tears of the Kingdom</h5>
+          <p class="card-text text-danger">Precio: S/125.00</p>
           <button onclick="confirmar()" class="btn btn-primary">Comprar</button>
         </div>
       </div>
@@ -42,11 +63,11 @@
     <!-- EA Sports FC 26 -->
     <div class="col-md-4 col-lg-3 mb-4">
       <div class="card h-100 text-center">
-        <img src="https://http2.mlstatic.com/D_NQ_NP_683923-MLA89789044947_082025-O.webp" class="card-img-top"
-          alt="EA Sports FC 26">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8qiZeqkyDvzCuHbrleIGh6KvcQNNXndgDVw&s" class="card-img-top"
+          alt="Super Mario Odyssey:">
         <div class="card-body">
-          <h5 class="card-title">EA Sports FC 26</h5>
-          <p class="card-text text-danger">Precio: S/170</p>
+          <h5 class="card-title">Super Mario Odyssey:</h5>
+          <p class="card-text text-danger">Precio: S/166.00</p>
           <button onclick="confirmar()" class="btn btn-primary">Comprar</button>
         </div>
       </div>
@@ -55,11 +76,11 @@
     <!-- Uncharted 4 -->
     <div class="col-md-4 col-lg-3 mb-4">
       <div class="card h-100 text-center">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE6-tn9E3DxKer-dvAo_m9PKS0MeGUdOrTFA&s"
-          class="card-img-top" alt="Uncharted 4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKCP6yAVnEQ5Ac8NW2VA8iJpuAzts1E4rDkQ&s"
+          class="card-img-top" alt="Mario Kart 8 Deluxe">
         <div class="card-body">
-          <h5 class="card-title">Uncharted 4</h5>
-          <p class="card-text text-danger">Precio: S/98</p>
+          <h5 class="card-title">Mario Kart 8 Deluxe</h5>
+          <p class="card-text text-danger">Precio: S/144.00</p>
           <button onclick="confirmar()" class="btn btn-primary">Comprar</button>
         </div>
       </div>
@@ -68,11 +89,11 @@
     <!-- GTA V -->
     <div class="col-md-4 col-lg-3 mb-4">
       <div class="card h-100 text-center">
-        <img src="https://gamescenter.pe/wp-content/uploads/2024/08/GTA-V-PS5-N.jpg" class="card-img-top"
-          alt="GTA V">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGmvJm7G_5cZwgSVhL4nC150ojbh2pwvp75A&s" class="card-img-top"
+          alt="Animal Crossing: New Horizons">
         <div class="card-body">
-          <h5 class="card-title">GTA V</h5>
-          <p class="card-text text-danger">Precio: S/134.47</p>
+          <h5 class="card-title">Animal Crossing: New Horizons</h5>
+          <p class="card-text text-danger">Precio: S/120.00</p>
           <button onclick="confirmar()" class="btn btn-primary">Comprar</button>
         </div>
       </div>
@@ -80,11 +101,11 @@
 
     <div class="col-md-4 col-lg-3 mb-4">
       <div class="card h-100 text-center">
-        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR_3HqT_8ebM96NClBf_7pFI_MN6F1Gjuo5zbR7tuF3zpphG0znMTWbdwIQi6Rz0-DY5ODP1X7Hzrg_hlBe3Z4dpRkGTeWi_OOYfJOB1BXTI-DNBTfmLMLybSqk1yKQ13wHhHZYEbc&usqp=CAc"
-          class="card-img-top" alt="Jujutsu kaisen">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZB837oO9iTn_5JTQkPiGdZHwqV3fvwrJPEQ&s"
+          class="card-img-top" alt="Luigi's Mansion 3">
         <div class="card-body">
-          <h5 class="card-title">Jujutsu kaisen</h5>
-          <p class="card-text text-danger">Precio:S/205.00</p>
+          <h5 class="card-title">Luigi's Mansion 3</h5>
+          <p class="card-text text-danger">Precio:S/240.00</p>
           <button onclick="confirmar()" class="btn btn-primary">Comprar</button>
         </div>
       </div>
@@ -92,11 +113,11 @@
 
     <div class="col-md-4 col-lg-3 mb-4">
       <div class="card h-100 text-center">
-        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS7CWCo3PcNQFxRS8w7-aKH2C55THRKDADz0AdaBsmWW9vbPEpV5MyFDN6xttBUSAG4dnlgIm9ltZP1L1iyFzz54vpB8p4FMPCBwmxhSEoRBF08kn2dorPmWAH0BmrdaXbEZfqUNKM&usqp=CAc"
-          class="card-img-top" alt="God  of war ragnarok">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhFyQRAaGc9l9MJirWDropp6tX1MWQFPotbA&s"
+          class="card-img-top" alt="crash bandicoot 4 ">
         <div class="card-body">
-          <h5 class="card-title">God  of war ragnarok</h5>
-          <p class="card-text text-danger">Precio:S/145.00</p>
+          <h5 class="card-title">crash bandicoot 4 </h5>
+          <p class="card-text text-danger">Precio:S/130.00</p>
           <button onclick="confirmar()" class="btn btn-primary">Comprar</button>
         </div>
       </div>
@@ -104,11 +125,11 @@
 
     <div class="col-md-4 col-lg-3 mb-4">
       <div class="card h-100 text-center">
-        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRAntljGs_1CbTbB-Xdfmx3uEES-Z7bOZ7Ql_TsQSK49W7SNEcZg4-I_1v6B4EIZEX_8lrVy2DNxce5frlkbxdqNRT-oqu9yRSjisrSYsJb6_hW5dAWipEQFRR2CrBH2fMcUil50nw&usqp=CAc"
-          class="card-img-top" alt="WWE 2K25">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUNS6gWU8bvhnZp5CftJzMTIOyK1hxfleQAA&s"
+          class="card-img-top" alt="donkey kong country tropical freeze ">
         <div class="card-body">
-          <h5 class="card-title">WWE 2K25</h5>
-          <p class="card-text text-danger">Precio:S/255.00</p>
+          <h5 class="card-title">donkey kong country tropical freeze </h5>
+          <p class="card-text text-danger">Precio:S/190.00</p>
           <button onclick="confirmar()" class="btn btn-primary">Comprar</button>
         </div>
       </div>
@@ -129,4 +150,4 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
+</html> 
