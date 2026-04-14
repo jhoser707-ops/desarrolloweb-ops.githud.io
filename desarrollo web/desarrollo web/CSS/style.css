@@ -1,12 +1,9 @@
-/* ===== RESET ===== */
 body {
     margin: 0;
     padding: 0;
     margin-top: 70px;
-    /* espacio para el nav fijo */
 }
 
-/* ===== NAV (BARRA ARRIBA FIJA) ===== */
 nav {
     background-color: greenyellow;
     width: 100%;
@@ -31,7 +28,6 @@ nav ul li {
     margin: 0 15px;
 }
 
-/* Mover a la derecha */
 .derecha {
     margin-left: auto;
 }
@@ -47,7 +43,6 @@ nav ul li a:hover {
     color: #ffcc00;
 }
 
-/* ===== HEADER ===== */
 #header {
     margin: 0;
     padding: 15px;
@@ -67,7 +62,6 @@ nav ul li a:hover {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ===== CONTENIDO ===== */
 #presentacion {
     color: blue;
     font-family: Arial, Helvetica, sans-serif;
@@ -75,7 +69,6 @@ nav ul li a:hover {
     text-align: center;
 }
 
-/* ===== VIDEO ===== */
 .video-container {
     display: flex;
     justify-content: center;
@@ -84,7 +77,6 @@ nav ul li a:hover {
     background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Call_of_Duty_Infinite_Warfare_cover.jpg/250px-Call_of_Duty_Infinite_Warfare_cover.jpg);
 }
 
-/* ===== MARQUEE ===== */
 .marquee {
     margin: 30px;
     padding: 30px;
@@ -93,7 +85,6 @@ nav ul li a:hover {
     font-size: 25px;
 }
 
-/* ===== PRODUCTOS ===== */
 .producto {
     margin: 15px;
     padding: 10px;
@@ -102,7 +93,6 @@ nav ul li a:hover {
     background: #f9f9f9;
 }
 
-/* ===== MODAL LOGIN ===== */
 .modal {
     position: fixed;
     top: 0;
@@ -116,14 +106,12 @@ nav ul li a:hover {
     display: none;
 }
 
-/* Mostrar modal */
 .modal:target {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Caja del modal */
 .modal-contenido {
     background: white;
     padding: 30px;
@@ -135,7 +123,6 @@ nav ul li a:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Botón cerrar */
 .cerrar {
     position: absolute;
     top: 10px;
@@ -145,14 +132,12 @@ nav ul li a:hover {
     color: black;
 }
 
-/* Inputs */
 .modal-contenido input {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
 }
 
-/* Botón ingresar */
 .modal-contenido input[type="submit"] {
     background: green;
     color: white;
@@ -161,11 +146,6 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-/* =========================================
-   LO QUE FALTABA (Sin cambiar nada de arriba)
-   ========================================= */
-
-/* Estilo para que los iconos hereden el color y tamaño adecuado */
 nav ul li a i {
     font-size: 24px;
     color: rgb(158, 21, 21);
@@ -176,14 +156,12 @@ nav ul li a i:hover {
     color: #ffcc00;
 }
 
-/* Asegura que el modal de registro también se muestre */
 #modal-registro:target {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Ajuste para que la lista de iconos a la derecha no se amontone */
 .ms-auto {
     display: flex;
     align-items: center;

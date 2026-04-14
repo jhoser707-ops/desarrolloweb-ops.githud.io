@@ -1,139 +1,157 @@
-/* --- ESTILOS GENERALES Y TABLA --- */
-#fondo {
-    background: #f0f7ff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #0056b3;
+* {
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#titulo {
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #1d1e1f;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #004a99;
+    background-image: linear-gradient(rgba(12, 218, 245, 0.918), rgba(0, 0, 0, 0.4));
+    border-bottom: 6px solid #003366;
+    color: #003366;
+    padding: 80px 20px;
     text-align: center;
+    border-bottom: 6px solid #003366;
+}
+
+header h1 {
     font-size: 3rem;
-    margin-bottom: 30px;
-    color: #007bff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 8px rgba(7, 197, 255, 0.7);
+    font-weight: 800;
 }
 
-#tabla-juegos {
-    width: 95%;
-    max-width: 1000px;
-    margin: auto;
-    border-collapse: collapse;
+header p {
+    font-size: 1.4rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 4px rgba(7, 197, 255, 0.7);
+}
+
+/* Contenedor Principal */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
     background: #ffffff;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 123, 255, 0.1);
+    margin-bottom: 40px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-#tabla-juegos th {
-    background: #007bff;
-    color: #ffffff;
-    padding: 20px;
+h2 {
+    color: #0056b3;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #e7f1ff;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.servicio-card {
+    border: 1px solid #dee2e6;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.servicio-card:hover {
+    background-color: #e7f1ff;
+    transform: translateY(-8px);
+    border-color: #0056b3;
+}
+
+.servicio-card h3 {
+    color: #0056b3;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+}
+
+ul,
+ol {
+    margin-left: 25px;
+    padding: 10px;
+}
+
+li {
+    margin-bottom: 12px;
     font-size: 1.1rem;
 }
 
-#tabla-juegos td {
-    padding: 15px;
-    text-align: center;
-    border-bottom: 1px solid #e1efff;
-    color: #333;
+#contacto {
+    background-color: #ffffff;
+    border-top: 6px solid #0056b3;
 }
 
-#tabla-juegos tr:hover {
-    background: #f8fbff;
-}
-
-#tabla-juegos img {
-    border: 3px solid #e1efff;
-    border-radius: 12px;
-    transition: transform 0.3s ease;
-}
-
-#tabla-juegos button {
-    background: #007bff;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    font-weight: bold;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-#tabla-juegos button:hover {
-    background: #0056b3;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
-}
-
-/* --- ESTILOS DE LA SECCIÓN CARRITO --- */
-#seccion-lista {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 30px;
-    background: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 123, 255, 0.1);
-    text-align: center;
-    border: 1px solid #e1efff;
-}
-
-#seccion-lista h2 {
-    color: #007bff;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    display: block !important;
-}
-
-#miLista {
-    width: 100%;
-    height: 150px;
-    padding: 15px;
-    border: 2px solid #e1efff;
-    border-radius: 12px;
-    background-color: #f8fbff;
-    color: #0056b3;
-    font-family: monospace;
-    font-size: 1rem;
-    resize: none;
-    outline: none;
-}
-
-.botones-lista {
-    margin-top: 20px;
+form {
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.btn-comprar {
-    background: #007bff;
-    color: white;
+label {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #004a99;
+}
+
+input,
+textarea {
+    padding: 12px;
+    margin-top: 8px;
+    border: 2px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0056b3;
+    background-color: #fdfdfd;
+}
+
+button {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #0056b3;
+    color: #ffffff;
     border: none;
-    padding: 12px 30px;
+    border-radius: 6px;
+    font-size: 1.2rem;
     font-weight: bold;
-    border-radius: 30px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.btn-comprar:hover {
-    background: #0056b3;
+button:hover {
+    background-color: #003366;
 }
 
-.btn-borrar {
-    background: #ffffff;
-    color: #007bff;
-    border: 2px solid #007bff;
-    padding: 10px 20px;
-    font-weight: bold;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-.btn-borrar:hover {
-    background: #f0f7ff;
-    color: #ff4d4d;
-    border-color: #ff4d4d;
+footer {
+    text-align: center;
+    padding: 50px 20px;
+    color: #777777;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
 }
